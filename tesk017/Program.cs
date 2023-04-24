@@ -55,3 +55,9 @@ for( int i = 0; i < result.Length; i ++)
     Console.Write(result[i] + " ");
 }
 Console.WriteLine();
+int number = 2;
+
+int nummber2 = 3;
+
+int result2 = number * nymber2;
+Console.WriteLine(result2);
