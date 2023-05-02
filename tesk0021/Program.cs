@@ -5,19 +5,19 @@
 
 double GetDistanceXY(double ax, double ay, double bx, double by ) 
 {
-   double distance = Math.Pow( ax - ay, 2) + Math.Pow(bx - by, 2); 
+   double distance = Math.Pow( bx - ax, 2) + Math.Pow(by - ay, 2);
    distance = Math.Sqrt(distance);
-   distance = Math.Round(distance, 2); 
+    
     return distance;
 }
 
-System.Console.WriteLine("Ввежите первое число по Х");
+System.Console.WriteLine("Ввежите координату первой точки по оси Х(ах) ");
 double ax = double.Parse(Console.ReadLine()!);
-System.Console.WriteLine("Ввежите 2 число по Y");
-double bx = double.Parse(Console.ReadLine())!; 
-System.Console.WriteLine("Ввежите 1 число по X ");
-double ay = double.Parse(Console.ReadLine())!;
-System.Console.WriteLine("Ввежите 2 число по Y");
+System.Console.WriteLine("Введите координату первой точки по оси Y(ay)");
+double ay = double.Parse(Console.ReadLine())!; 
+System.Console.WriteLine("Введите координату второй точки по оси Х(bx) ");
+double bx = double.Parse(Console.ReadLine())!;
+System.Console.WriteLine("Введите координату второй точки по оси Y(by)");
 double by = double.Parse(Console.ReadLine())!;
 
 
